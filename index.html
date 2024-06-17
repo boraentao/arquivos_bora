@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="rodadas.js"></script> 
+    <title>Teste Rodadas</title>
+    <style>
+    
+        #controls {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        #round-info {
+          text-align: center;
+          max-height: 100%;
+        }
+        
+       
+        
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #000000;
+        }
+        .container {
+          width: max-content;
+          margin: 2em auto;
+          padding: 0.5em;
+          background-color: #000;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+          text-align: center;
+          font-size: 1.5em;
+        }
+        .game {
+          margin: 1em;
+          padding: 2em;
+          border-radius: 5px;
+          background-color: #222222;
+          display: block;
+          align-items: center;
+        }
+        .game img {
+          width: 3em;
+          height: 3em;
+        }
+        .casa {
+          float: left;
+        }
+        .fora {
+          float: right;
+        }
+        .game h3 {
+          font-size: 1em;
+          margin-bottom: 1em;
+        }
+        .game p {
+          margin: auto;
+        }
+        
+       #championship-gadget{
+         display: none;
+        }
+      </style>
+</head>
+<body>
+    <div >
+        <div id="controls">
+          <button onclick="previousRound()">Anterior</button>
+          <button onclick="nextRound()">Próxima</button>
+        </div>
+        <div id="round-info">
+          <!-- Informações da rodada serão exibidas aqui -->
+        </div>
+      </div>
+</body>
+</html>
